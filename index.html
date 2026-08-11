@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TATAMI - доставка суши, вока и пиццы | Заказать онлайн</title>
+  <meta name="description" content="TATAMI Sushi &amp; Wok - свежие суши, роллы, сеты, вок и пицца с доставкой и самовывозом. Кэшбэк 1%, оплата картой, бонусы за регистрацию. Заказывайте онлайн!">
+  <meta name="theme-color" content="#14100f">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TATAMI - доставка суши, вока и пиццы">
+  <meta property="og:description" content="Свежие суши, роллы, сеты, вок и пицца. Доставка и самовывоз, кэшбэк 1%, оплата картой. Заказать онлайн.">
+  <meta property="og:image" content="https://ali-hub-01.github.io/tatami/assets/og-image.jpg">
+  <meta property="og:url" content="https://ali-hub-01.github.io/tatami/">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TATAMI - доставка суши, вока и пиццы">
+  <meta name="twitter:description" content="Свежие суши, роллы, сеты, вок и пицца. Доставка и самовывоз, кэшбэк 1%. Заказать онлайн.">
+  <meta name="twitter:image" content="https://ali-hub-01.github.io/tatami/assets/og-image.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="canonical" href="https://ali-hub-01.github.io/tatami/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="header__logo" aria-label="TATAMI - на главную">
+        <img src="assets/logo.png" alt="Логотип TATAMI Sushi &amp; Wok" width="303" height="100" decoding="async">
+      </a>
+      <nav class="header__nav" aria-label="Основная навигация">
+        <a href="#menu">Меню</a>
+        <a href="#dostavka">Доставка</a>
+        <a href="#app">Приложение</a>
+        <a href="#kontakty">Контакты</a>
+      </nav>
+      <div class="header__actions">
+        <a href="tel:+77775675639" class="header__phone" aria-label="Позвонить +7 777 567 56 39">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+          <span>+7 777 567 56 39</span>
+        </a>
+        <a href="https://tatami.tuvis.world/" target="_blank" rel="noopener" class="btn btn--red btn--sm header__order">Заказать</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Мобильная навигация">
+      <a href="#menu">Меню</a>
+      <a href="#dostavka">Доставка</a>
+      <a href="#app">Приложение</a>
+      <a href="#kontakty">Контакты</a>
+      <a href="tel:+77775675639" class="mobile-nav__phone">Позвонить: +7 777 567 56 39</a>
+      <a href="https://tatami.tuvis.world/" target="_blank" rel="noopener" class="btn btn--red">Заказать доставку</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__kicker reveal">Sushi &amp; Wok &middot; доставка по городу</p>
+          <h1 class="hero__title reveal">Суши, вок и пицца - <span class="accent">свежие</span>, быстро, <span class="accent-green">вкусно</span></h1>
+          <p class="hero__subtitle reveal">Доставка и самовывоз. Кэшбэк 1% с каждого заказа и бонусы за регистрацию - вкус, который привозят.</p>
+          <div class="hero__cta reveal">
+            <a href="https://tatami.tuvis.world/" target="_blank" rel="noopener" class="btn btn--red btn--lg btn--pulse">
+              Заказать доставку
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#menu" class="btn btn--ghost btn--lg">Смотреть меню</a>
+          </div>
+          <ul class="hero__badges reveal">
+            <li><span class="badge-ico">%</span> Кэшбэк 1%</li>
+            <li><span class="badge-ico">&#128666;</span> Доставка и самовывоз</li>
+            <li><span class="badge-ico">&#128179;</span> Оплата картой</li>
+          </ul>
+        </div>
+        <div class="hero__photo reveal">
+          <div class="hero__photo-frame">
+            <img src="assets/hero.jpg" alt="Аппетитный суши-сет TATAMI: роллы с лососем, Филадельфия и нигири" width="1500" height="1875" loading="eager" decoding="async" fetchpriority="high">
+          </div>
+          <div class="hero__sticker" aria-hidden="true">
+            <strong>1%</strong>
+            <span>кэшбэк<br>с заказа</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- БЕГУЩАЯ СТРОКА -->
+    <div class="ticker-clip" aria-hidden="true">
+    <div class="ticker">
+      <div class="ticker__track">
+        <span>Суши</span><i>&#9679;</i><span>Роллы</span><i>&#9679;</i><span>Сеты</span><i>&#9679;</i><span>Пицца</span><i>&#9679;</i><span>Вок</span><i>&#9679;</i><span>Горячие блюда</span><i>&#9679;</i><span>Салаты</span><i>&#9679;</i><span>Супы</span><i>&#9679;</i>
+        <span>Суши</span><i>&#9679;</i><span>Роллы</span><i>&#9679;</i><span>Сеты</span><i>&#9679;</i><span>Пицца</span><i>&#9679;</i><span>Вок</span><i>&#9679;</i><span>Горячие блюда</span><i>&#9679;</i><span>Салаты</span><i>&#9679;</i><span>Супы</span><i>&#9679;</i>
+      </div>
+    </div>
+    </div>
+
+    <!-- МЕНЮ -->
+    <section class="menu section" id="menu">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Выбирайте <span class="accent">любимое</span></h2>
+          <p class="section__lead">Нажмите на категорию - и заказ уже в пути. Классические, жареные и запечённые роллы, сеты, гунканы, онигири, вок и пицца.</p>
+        </div>
+        <div class="menu__grid">
+          <a href="https://tatami.tuvis.world/" target="_blank" rel="noopener" class="menu-card menu-card--tall reveal">
+            <img src="assets/menu/sety.jpg" alt="Большой суши-сет TATAMI на компанию" width="820" height="1025" loading="lazy" decoding="async">
+            <div class="menu-card__overlay">
+              <h3>Сеты</h3>
+              <span class="menu-card__cta">Заказать <i>&rarr;</i></span>
+            </div>
+          </a>
+          <a href="https://tatami.tuvis.world/" target="_blank" rel="noopener" class="menu-card reveal">
+            <img src="assets/menu/rolly.jpg" alt="Роллы Филадельфия с нежным лососем" width="820" height="1230" loading="lazy" decoding="async">
+            <div class="menu-card__overlay">
+              <h3>Роллы</h3>
+              <span class="menu-card__cta">Заказать <i>&rarr;</i></span>
+            </div>
+          </a>
+          <a href="https://tatami.tuvis.world/" target="_blank" rel="noopener" class="menu-card reveal">
+            <img src="assets/menu/sushi.jpg" alt="Классические суши и нигири со свежей рыбой" width="820" height="1230" loading="lazy" decoding="async">
+            <div class="menu-card__overlay">
+              <h3>Суши</h3>
+              <span class="menu-card__cta">Заказать <i>&rarr;</i></span>
+            </div>
+          </a>
+          <a href="https://tatami.tuvis.world/" target="_blank" rel="noopener" class="menu-card reveal">
+            <img src="assets/menu/pizza.jpg" alt="Горячая пицца с тянущимся сыром" width="820" height="546" loading="lazy" decoding="async">
+            <div class="menu-card__overlay">
+              <h3>Пицца</h3>
+              <span class="menu-card__cta">Заказать <i>&rarr;</i></span>
+            </div>
+          </a>
+          <a href="https://tatami.tuvis.world/" target="_blank" rel="noopener" class="menu-card reveal">
+            <img src="assets/menu/wok.jpg" alt="Вок с лапшой, овощами и курицей в фирменном соусе" width="820" height="1228" loading="lazy" decoding="async">
+            <div class="menu-card__overlay">
+              <h3>Вок</h3>
+              <span class="menu-card__cta">Заказать <i>&rarr;</i></span>
+            </div>
+          </a>
+          <a href="https://tatami.tuvis.world/" target="_blank" rel="noopener" class="menu-card menu-card--tall reveal">
+            <img src="assets/menu/goryachee.jpg" alt="Горячие блюда TATAMI - сытно и ароматно" width="820" height="1094" loading="lazy" decoding="async">
+            <div class="menu-card__overlay">
+              <h3>Горячие блюда</h3>
+              <span class="menu-card__cta">Заказать <i>&rarr;</i></span>
+            </div>
+          </a>
+        </div>
+        <div class="menu__more reveal">
+          <p>А ещё - салаты, супы, гунканы и онигири</p>
+          <a href="https://tatami.tuvis.world/" target="_blank" rel="noopener" class="btn btn--red btn--lg">Смотреть всё меню и заказать</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПОЧЕМУ TATAMI -->
+    <section class="perks section" id="dostavka">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Почему <span class="accent-green">TATAMI</span></h2>
+        </div>
+        <div class="perks__grid">
+          <div class="perk reveal">
+            <div class="perk__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
+            </div>
+            <h3>Быстрая доставка</h3>
+            <p>Готовим сразу после заказа и привозим горячим и свежим.</p>
+          </div>
+          <div class="perk reveal">
+            <div class="perk__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6-6 6 6"/><path d="M4 9h16v11a1 1 0 01-1 1H5a1 1 0 01-1-1V9z"/><path d="M9 21v-6h6v6"/></svg>
+            </div>
+            <h3>Самовывоз</h3>
+            <p>Удобно забрать заказ самому - без ожидания курьера.</p>
+          </div>
+          <div class="perk reveal">
+            <div class="perk__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9.5h.01M15 14.5h.01M15 9l-6 6"/></svg>
+            </div>
+            <h3>Кэшбэк 1% и бонусы</h3>
+            <p>Возвращаем 1% с каждого заказа и дарим бонусы за регистрацию.</p>
+          </div>
+          <div class="perk reveal">
+            <div class="perk__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M2.5 10h19"/><path d="M6 15h4"/></svg>
+            </div>
+            <h3>Оплата картой</h3>
+            <p>Платите онлайн банковской картой - быстро и безопасно.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРИЛОЖЕНИЕ -->
+    <section class="app section" id="app">
+      <div class="container">
+        <div class="app__card reveal">
+          <div class="app__content">
+            <p class="app__kicker">Приложение TATAMI</p>
+            <h2 class="section__title">Заказ в пару кликов - <span class="accent">прямо с телефона</span></h2>
+            <ul class="app__list">
+              <li>Заказ за пару кликов - меню всегда под рукой</li>
+              <li>Бонусы и кэшбэк копятся автоматически</li>
+              <li>История заказов - повторить любимое одним нажатием</li>
+            </ul>
+            <div class="app__buttons">
+              <a href="https://tatami.tuvis.world/download/app" target="_blank" rel="noopener" class="store-btn">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.05 12.54c-.03-2.5 2.04-3.7 2.13-3.76-1.16-1.7-2.97-1.93-3.61-1.96-1.54-.16-3 .9-3.78.9-.78 0-1.98-.88-3.26-.86-1.68.03-3.22.98-4.08 2.48-1.74 3.02-.44 7.5 1.25 9.95.83 1.2 1.82 2.55 3.12 2.5 1.25-.05 1.72-.8 3.23-.8 1.51 0 1.93.8 3.25.78 1.34-.02 2.19-1.22 3.01-2.43.95-1.39 1.34-2.74 1.36-2.81-.03-.01-2.6-1-2.62-3.99zM14.56 5.2c.69-.83 1.15-1.99 1.02-3.15-.99.04-2.19.66-2.9 1.49-.64.74-1.19 1.92-1.04 3.05 1.1.09 2.23-.56 2.92-1.39z"/></svg>
+                <span><small>Скачать в</small><strong>App Store</strong></span>
+              </a>
+              <a href="https://tatami.tuvis.world/download/app" target="_blank" rel="noopener" class="store-btn">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M3.6 2.4c-.3.3-.5.8-.5 1.4v16.4c0 .6.2 1.1.5 1.4l.1.1 9.2-9.2v-.2L3.7 2.3l-.1.1zm12.4 12.5l-3-3.1v-.2l3-3.1.1.1 3.7 2.1c1 .6 1 1.5 0 2.1l-3.7 2.1h-.1zm-.7.7l-3.1-3.1-9.2 9.2c.3.4 1 .4 1.6 0l10.7-6.1zM12.2 11L3 1.9c.6-.4 1.3-.4 1.6 0l10.8 6.1-3.2 3z"/></svg>
+                <span><small>Скачать для</small><strong>Android</strong></span>
+              </a>
+            </div>
+          </div>
+          <div class="app__visual" aria-hidden="true">
+            <div class="phone">
+              <div class="phone__notch"></div>
+              <img src="assets/menu/rolly.jpg" alt="" width="820" height="1230" loading="lazy" decoding="async">
+              <div class="phone__ui">
+                <span class="phone__pill">Роллы Филадельфия</span>
+                <span class="phone__order">Заказать &middot; 2 490 &#8376;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section class="contacts section" id="kontakty">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Проголодались? <span class="accent">Мы уже готовим</span></h2>
+          <p class="section__lead">Доставка по городу и самовывоз. Заказывайте онлайн или позвоните нам.</p>
+        </div>
+        <div class="contacts__grid">
+          <a href="tel:+77775675639" class="contact-card reveal">
+            <div class="contact-card__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+            </div>
+            <h3>Позвонить</h3>
+            <p class="contact-card__phone">+7 777 567 56 39</p>
+          </a>
+          <div class="contact-card contact-card--order reveal">
+            <div class="contact-card__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.6"/><circle cx="17" cy="20" r="1.6"/><path d="M3 3h2l2.7 12.2a1 1 0 001 .8h8.9a1 1 0 001-.8L20.5 7H6"/></svg>
+            </div>
+            <h3>Заказать онлайн</h3>
+            <p>Всё меню, кэшбэк и оплата картой</p>
+            <a href="https://tatami.tuvis.world/" target="_blank" rel="noopener" class="btn btn--red">Заказать онлайн</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ФУТЕР -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="footer__logo" aria-label="TATAMI - наверх">
+        <img src="assets/logo.png" alt="Логотип TATAMI Sushi &amp; Wok" width="303" height="100" loading="lazy" decoding="async">
+      </a>
+      <nav class="footer__nav" aria-label="Навигация в подвале">
+        <a href="#menu">Меню</a>
+        <a href="#dostavka">Доставка</a>
+        <a href="#app">Приложение</a>
+        <a href="#kontakty">Контакты</a>
+      </nav>
+      <p class="footer__copy">&copy; 2026 TATAMI &middot; Sushi &amp; Wok. Доставка по городу.</p>
+    </div>
+  </footer>
+
+  <!-- ЛИПКАЯ КНОПКА ЗАКАЗА (мобайл) -->
+  <a href="https://tatami.tuvis.world/" target="_blank" rel="noopener" class="sticky-order" id="stickyOrder">
+    Заказать доставку
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+  </a>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
