@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://tatami.site.tuvis.world/sitemap.xml
+Sitemap: https://tatami.site.tuvis.world/sitemap.xml
