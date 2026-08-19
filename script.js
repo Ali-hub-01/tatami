@@ -71,3 +71,36 @@
     }
   }
 })();
+
+/* ---------- Google Ads: конверсии (телефон + заказ) ----------
+   Телефон → "Интерактивные номера телефонов"; клик "Заказать" (переход в систему заказа) → "Контакт".
+   С дедупом (1 раз за сессию) и анти-ботом: боты грузят страницу и прокликивают ссылки без человеческих жестов. */
+(function () {
+  var humanSeen = false;
+  ['pointermove', 'pointerdown', 'touchstart', 'scroll', 'keydown', 'wheel'].forEach(function (ev) {
+    window.addEventListener(ev, function () { humanSeen = true; }, { once: true, passive: true });
+  });
+  function isLikelyBot() { return !!navigator.webdriver || !humanSeen; }
+
+  function fireConversion(sendTo, key) {
+    if (typeof gtag !== 'function') return;
+    if (isLikelyBot()) return;
+    try {
+      var k = 'tt_conv_' + key;
+      if (sessionStorage.getItem(k)) return;   // уже отправляли в этой сессии
+      sessionStorage.setItem(k, '1');
+    } catch (e) { /* приватный режим */ }
+    gtag('event', 'conversion', { 'send_to': sendTo, 'value': 1.0, 'currency': 'USD' });
+  }
+
+  document.addEventListener('click', function (e) {
+    if (!e.isTrusted) return;                  // синтетический клик бота, игнор
+    var a = e.target.closest && e.target.closest('a[href^="tel:"], a[href*="tatami.tuvis.world"]');
+    if (!a) return;
+    var isTel = a.getAttribute('href').indexOf('tel:') === 0;
+    fireConversion(
+      isTel ? 'AW-18398806126/vnZWCM7aveQcEO6AnsVE' : 'AW-18398806126/s0BcCL25u-QcEO6AnsVE',
+      isTel ? 'tel' : 'order'
+    );
+  });
+})();
